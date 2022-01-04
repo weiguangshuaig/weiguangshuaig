@@ -1,16 +1,29 @@
-### Hi there 👋
+# Hello, Im Ethan!
 
-<!--
-**weiguangshuaig/weiguangshuaig** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 𝗜 𝗮𝗺 𝗮 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿 𝗶𝗻 𝗵𝗶𝗴𝗵 𝘀𝗰𝗵𝗼𝗼𝗹
+- 𝗜 ❤️ 𝗟𝗼𝘄 𝗟𝗲𝘃𝗲𝗹 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴!
 
-Here are some ideas to get you started:
+```julia
+module main
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+aboutMe :: struct {
+  pronouns :: string[];
+  languages :: string[];
+  hobbies :: string[];
+  funFact :: string;
+}
+
+main :: func(): void {
+  ethan :: aboutMe = {
+    pronouns: ["He", "Him"],
+    languages: ["C", "C#", "Java", "Python"],
+    hobbies: ["Coding", "Gaming", "Talking"],
+    funFact: "The first computer virus was created in 1983!"
+  };
+
+  println "Pronouns: ${ethan.pronouns}";
+  println "Languages I Know: ${ethan.languages}";
+  println "My Hobbies: ${ethan.hobbies}";
+  println "Fun Fact: ${ethan.funFact}";
+}
+```
